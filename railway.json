@@ -1,6 +1,6 @@
 {
   "build": {
-    "builder": "docker",
+    "builder": "dockerfile",
     "dockerfilePath": "back/Dockerfile",
     "context": "back"
   },
