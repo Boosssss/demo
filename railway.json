@@ -1,0 +1,16 @@
+{
+  "build": {
+    "builder": "docker",
+    "dockerfilePath": "back/Dockerfile",
+    "context": "back"
+  },
+  "start": "gunicorn backend.wsgi:application --bind 0.0.0.0:8000 --workers 3",
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "backend.settings",
+    "POSTGRES_DB": "mydb",
+    "POSTGRES_USER": "user",
+    "POSTGRES_PASSWORD": "pass",
+    "POSTGRES_HOST": "db",
+    "POSTGRES_PORT": "5432"
+  }
+}
