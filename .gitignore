@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+*.log
+
+# Python virtual environments
+back/whisperx-env/
+back/venv/
+back/.venv/
+back/env/
+back/ENV/
+
+# Django static files (auto-generated, don't track)
+back/staticfiles/
+
+# Node
+front/node_modules/
+front/build/
+front/.env
+
+# Docker
+*.log
+*.tmp
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
